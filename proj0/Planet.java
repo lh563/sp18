@@ -71,7 +71,7 @@ public class Planet {
 
     }
 
-    public double calcNetForceExertedByX (Planet[] planetArray){
+    public double calcNetForceExertedByX(Planet[] planetArray){
         double netForceX = 0;
 
         for (Planet p : planetArray){
@@ -83,7 +83,7 @@ public class Planet {
         return netForceX;
     }
 
-    public double calcNetForceExertedByY (Planet[] planetArray){
+    public double calcNetForceExertedByY(Planet[] planetArray){
         double netForceY = 0;
 
         for (Planet p : planetArray){
@@ -95,7 +95,7 @@ public class Planet {
         return netForceY;
 }
 
-    public void update (double dt,double fX,double fY){
+    public void update(double dt,double fX,double fY){
         double aX = fX / this.mass;
         double aY = fY / this.mass;
 
@@ -104,7 +104,7 @@ public class Planet {
 
     }
 
-    public void draw() {
+    public void draw(){
         StdDraw.picture(this.xxPos, this.yyPos, "./images/" + this.imgFileName);
     }
 
